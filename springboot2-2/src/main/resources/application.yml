@@ -1,0 +1,39 @@
+# yaml表示以上对象
+person:
+  username: zhangsan
+  #  单引号会将 \n作为字符串输出   双引号会将\n 作为换行输出
+  #  双引号不会转义，单引号会转义
+  boss: false
+  birth: 2019/12/12 20:12:33
+  age: 18
+  pet:
+    name: tomcat
+    weight: 23.4
+#  interests: [篮球, 游泳] #数组String
+  interests:
+    - 篮球
+    - 游泳
+    - 18
+
+  animal:
+    - jerry
+    - mario
+  #String类型list
+  score:
+    english:
+      first: 30
+      second: 40
+      third: 50
+      #Map<String, Integer>
+    math: [131,140,148] #数组
+    chinese: {first: 128, second: 136}
+#  salarys: [3999,4999.98,5999.99]
+  salarys:
+    - 3999
+    - 4999
+    - 5999
+  allPets:
+    sick:
+      - {name: tom} #Pet 属性name
+      - {name: jerry,weight: 47} #Pet 属性name + weight
+    health: [{name: mario,weight: 47}, {name: Jack, weight: 55}]
